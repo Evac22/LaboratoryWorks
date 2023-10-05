@@ -7,31 +7,16 @@ int main() {
     SetConsoleOutputCP(1251);
     SetConsoleCP(1251);
     Library library; // Створюємо об'єкт бібліотеки типу Library
-    std::vector<Book> myLibrary;
 
-    // Захардкодимо дані для 10 книг
-   Book book1("Книга 1", "Автор 1", 2020);
-   Book book2("Книга 2", "Автор 2", 2019);
-   Book book3("Книга 3", "Автор 3", 2018);
-   Book book4("Книга 4", "Автор 4", 2017);
-   Book book5("Книга 5", "Автор 5", 2016);
-   Book book6("Книга 6", "Автор 6", 2015);
-   Book book7("Книга 7", "Автор 7", 2014);
-   Book book8("Книга 8", "Автор 8", 2013);
-   Book book9("Книга 9", "Автор 9", 2012);
-   Book book10("Книга 10", "Автор 10", 2011);
+    // Захардкодимо дані для 10 книг і додаємо їх до бібліотеки
+    for (int i = 1; i <= 10; ++i) {
+        std::string title = "Книга " + std::to_string(i);
+        std::string author = "Автор " + std::to_string(i);
+        int year = 2020 - i; // Просто пример для года
 
-    // Додаємо книги до бібліотеки
-    library.AddBook(book1);
-    library.AddBook(book2);
-    library.AddBook(book3);
-    library.AddBook(book4);
-    library.AddBook(book5);
-    library.AddBook(book6);
-    library.AddBook(book7);
-    library.AddBook(book8);
-    library.AddBook(book9);
-    library.AddBook(book10);
+        Book book(title, author, year);
+        library.AddBook(book);
+    }
 
     int choice;
     do {
