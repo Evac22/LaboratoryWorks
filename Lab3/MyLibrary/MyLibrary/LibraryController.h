@@ -4,8 +4,8 @@
 class Library
 {
 public:
-    // Конструктор ініціалізації бібліотеки
-    Library();
+	// Конструктор ініціалізації бібліотеки
+	Library();
 
     // Додати книгу до бібліотеки
     void AddBook(const Book& book);
@@ -34,3 +34,4 @@ public:
 private:
     std::vector<Book> books;
 };
+

@@ -129,11 +129,17 @@
   <ItemGroup>
     <ClInclude Include="Book.h" />
     <ClInclude Include="Library.h" />
+    <ClInclude Include="LibraryInitializer.h" />
+    <ClInclude Include="LibraryManager.h" />
+    <ClInclude Include="Menu.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="Library.cpp" />
-    <ClCompile Include="MyLibrary.cpp" />
+    <ClCompile Include="LibraryInitializer.cpp" />
+    <ClCompile Include="LibraryManager.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
